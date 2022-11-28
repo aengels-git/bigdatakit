@@ -1,0 +1,61 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# bigdatakit
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of bigdatakit is to convert large csv files to parquet files
+
+## Installation
+
+You can install the development version of bigdatakit from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("aengels-git/bigdatakit")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(bigdatakit)
+## basic example code
+library(tidyverse)
+big_diamonds <- map(1:100,function(i){
+  diamonds
+})%>%reduce(rbind)
+write_csv(big_diamonds,"big_diamonds.csv")
+
+require(tictoc)
+tic()
+big_diamonds <- read_csv("big_diamonds.csv")
+toc()
+#3.03 sec elapsed
+
+#Conversion happens mostly out of memory
+tic()
+convert_to_parquet("big_diamonds.csv")
+toc()
+#3.36 sec elapsed
+
+tic()
+big_diamonds <- read_parquet("big_diamonds.parquet")
+toc()
+#0.61 sec elapsed
+```
