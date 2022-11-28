@@ -18,4 +18,5 @@ Depends:
     glue,
     rlang,
     htmltools,
-    readr
+    readr,
+    stringr
