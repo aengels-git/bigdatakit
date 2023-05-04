@@ -1,0 +1,30 @@
+﻿disorder;atc;subscale
+Acid related disorders ;A02;Hub_S1
+"Bone diseases
+(osteoporosis)";M05;Hub_S2
+Cancer;L01;Hub_S3
+"Cardiovascular
+diseases (incl.
+hypertension)";B01AA, B01AC, C01, C04A, C02, C07, C08, C09;Hub_S4
+Dementia;N06D;Hub_S5
+Diabetes mellitus;A10A, A10B, A10X;Hub_S6
+Epilepsy;N03;Hub_S7
+Glaucoma;S01E;Hub_S8
+Gout, Hyperuricemia;M04;Hub_S9
+HIV;J05AE, J05AG, J05AR;Hub_S10
+Hyperlipidemia;C10;Hub_S11
+Intestinal inflammatory diseases;A07EA, A07EC;Hub_S12
+Iron deficiency anemia;B03AA, B03AB, B03AC;Hub_S13
+Migraines;N02C;Hub_S14
+Pain;N02A, N02B;Hub_S15
+Parkinson’s disease;N04, N05B, N05C;Hub_S16
+"Psycholgical disorders
+(sleep disorder,
+depression)";N06A;Hub_S17
+Psychoses;N05A;Hub_S18
+"Respiratory illness
+(asthma, COPD)";R03;Hub_S19
+"Rheumatologic
+conditions";M01, M02, L04AA, L04AB;Hub_S20
+Thyroid disorders;H03;Hub_S21
+Tuberculosis;J04A;Hub_S22
